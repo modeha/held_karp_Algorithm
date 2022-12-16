@@ -1,0 +1,17 @@
+NAME: test
+TYPE: TSP
+COMMENT: 4 Cities in Bavaria, geographical distances (Groetschel,Juenger,Reinelt)
+DIMENSION: 4
+EDGE_WEIGHT_TYPE: EXPLICIT
+EDGE_WEIGHT_FORMAT: UPPER_ROW 
+DISPLAY_DATA_TYPE: TWOD_DISPLAY
+EDGE_WEIGHT_SECTION
+ 1 2 4
+ 2 1
+ 2
+DISPLAY_DATA_SECTION
+   1    1150.0  1760.0
+   2     630.0  1660.0
+   3      40.0  2090.0
+   4     750.0  1100.0
+EOF
