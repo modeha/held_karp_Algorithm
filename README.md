@@ -6,13 +6,13 @@ a given set of cities and returns to the starting city. The Held-Karp algorithm 
 
 ## Initialization
 - Initialize a table (DP) to store subproblem solutions.
-- For each subset of cities S that includes the starting city and has a size of 2 or more, calculate DP[S][j] for each city j in S.
+- For each subset of cities S that includes the starting city and has a size of 2 or more, calculate $DP[S][j]$ for each city j in S.
 
 ## Recursive Calculation
-- For each subset S and each city j in S, calculate DP[S][j] using the recurrence relation:
+- For each subset S and each city j in S, calculate $DP[S][j]$ using the recurrence relation:
 
 $DP[S][j] = min_{k in S, k != j} (DP[S - {j}][k] + cost[k][j])$
 This formula considers all possible ways to reach city j from the starting city by visiting all cities in S exactly once.
 
 ## Final Solution
-- The optimal tour cost is given by the minimum value of min_{j != start} (DP[all cities][j] + cost[j][start]).
+- The optimal tour cost is given by the minimum value of $min_{j != start} (DP[all cities][j] + cost[j][start]).$
